@@ -37,8 +37,6 @@ jobs:
 
       - name: Run scraping script
         run: python script.py
-        env:
-          PUBLIC_KEY: ${{ secrets.PUBLIC_KEY }}
 
       - name: Commit and push scraped data
         run: |
