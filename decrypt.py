@@ -5,7 +5,7 @@ import pandas as pd
 import base64
 
 # Loading private key (don't hack me!)
-with open("/Users/eljahappelson/Desktop/private_key.pem", "rb") as f:
+with open("PATH", "rb") as f:
     private_key = serialization.load_pem_private_key(f.read(), password=None)
 
 # Defining decryption function
@@ -23,7 +23,7 @@ def decrypt_value(val):
         return val
 
 # Loading CSV
-df = pd.read_csv("/Users/eljahappelson/Downloads/scraped_data_x.csv")
+df = pd.read_csv("PATH")
 
 # Decrypting columns
 sensitive_cols = ["Name", "DOB"]
