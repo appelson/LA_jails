@@ -1,4 +1,3 @@
-# Loading libraries
 library(rvest)
 library(pdftools)
 library(dplyr)
@@ -6,10 +5,8 @@ library(stringr)
 library(readr)
 library(furrr)
 
-# Setting up parallel processing
 plan(multisession, workers = parallel::detectCores() - 1)
 
-# Defining parishes
 parishes <- c(
   "Acadia", "Allen", "Ascension", "Assumption", "Avoyelles", "Beauregard",
   "Bienville", "Bossier", "Caddo", "Calcasieu", "Caldwell", "Cameron",
@@ -25,23 +22,17 @@ parishes <- c(
   "West Carroll", "West Feliciana", "Winn"
 )
 
-# Defining extract pattern
 pattern <- "^(.+?)\\s+(\\d{2}/\\d{2}/\\d{4})\\s+(.+?)\\s+(Male|Female)(?:\\s+(\\d{2}/\\d{2}/\\d{4}))?$"
 
-# PDF parsing function
 parse_pdf <- function(url, parish, pattern, i, n) {
   cat(sprintf("  [%d/%d] %s\n", i, n, url))
   tryCatch({
-
-    # Getting lines
     lines <- pdftools::pdf_text(url) |>
       paste(collapse = "\n") |>
       stringr::str_split("\n") |>
       unlist() |>
       stringr::str_trim() |>
       (\(x) x[nchar(x) > 0])()
-
-    # Cleaning variables
     dplyr::mutate(
       dplyr::select(
         as.data.frame(stringr::str_match(
@@ -49,44 +40,38 @@ parse_pdf <- function(url, parish, pattern, i, n) {
         )),
         name = V2, dob = V3, race = V4, gender = V5, arrest_date = V6
       ),
-      dob = as.Date(dob, format = "%m/%d/%Y"),
+      dob         = as.Date(dob,         format = "%m/%d/%Y"),
       arrest_date = as.Date(arrest_date, format = "%m/%d/%Y"),
-      parish = parish,
+      parish      = parish,
       roster_date = as.Date(stringr::str_extract(url, "\\d{4}-\\d{2}-\\d{2}"))
     )
   }, error = function(e) NULL)
 }
 
-# Creating roster directory to save the extracted files to
 dir.create("rosters", showWarnings = FALSE)
-
-# Defining already done of parish already completed
 already_done <- gsub("\\.csv$", "", list.files("rosters"))
 
-
-# Looping through parishes and extracting
 for (parish in parishes) {
-  if (parish %in% already_done) {
-    cat("Skipping (already done):", parish, "\n")
-    next
-  }
+  if (parish %in% already_done) { cat("Skipping (already done):", parish, "\n"); next }
   cat("Parish:", parish, "\n")
 
-  # Defining the scraper
-  hrefs <- tryCatch({
-    rvest::read_html(paste0("https://jailrosters.org/la/", parish, "/")) |>
+  hrefs <- tryCatch(
+    rvest::read_html(paste0("https://jailrosters.org/la/", URLencode(parish, reserved = TRUE), "/")) |>
       rvest::html_elements("li a") |>
-      rvest::html_attr("href")
-  }, error = function(e) character(0))
-                    
+      rvest::html_attr("href"),
+    error = function(e) { cat("  PAGE ERROR:", e$message, "\n"); character(0) }
+  )
+
   pdf_paths <- stringr::str_extract(hrefs, "(?<=pdf=).+")
   pdf_paths <- pdf_paths[!is.na(pdf_paths)]
-  pdf_urls  <- paste0("https://jailrosters.org/la/", pdf_paths)
+  pdf_urls  <- paste0("https://jailrosters.org/la/", URLencode(pdf_paths, repeated = TRUE))
   n <- length(pdf_urls)
+
+  if (n == 0) { cat("  No PDFs found\n"); next }
 
   df <- future_map_dfr(seq_along(pdf_urls), function(i) {
     parse_pdf(pdf_urls[[i]], parish = parish, pattern = pattern, i = i, n = n)
-  })
+  }, .options = furrr_options(seed = NULL))
 
   if (nrow(df) > 0) {
     write_csv(df, paste0("rosters/", parish, ".csv"), na = "")
@@ -94,10 +79,8 @@ for (parish in parishes) {
   }
 }
 
-# Defining all rosters
 all_rosters <- list.files("rosters", full.names = TRUE) |>
   lapply(read_csv, show_col_types = FALSE) |>
   bind_rows()
 
-# Saving all rosters
 write_csv(all_rosters, "la_all_rosters.csv", na = "")
