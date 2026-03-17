@@ -15,6 +15,7 @@ Sensitive fields (`Name` and `DOB`) are encrypted using RSA public-key encryptio
 - `script.py`: Scrapes all jails and encrypts sensitive columns before saving
 - `encrypt.py`: Encryption utility
 - `decrypt.py`: Decrypts CSVs locally using the private key
+- `jail_scraper.r`: Scrapes data from the past year saved [here](https://jailrosters.org/).
 - `links.csv`: List of 80 jail roster URLs with associated jail names
 - `.github/workflows/main.yml`: GitHub Actions workflow that runs the scraper
 
