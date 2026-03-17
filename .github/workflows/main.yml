@@ -1,0 +1,52 @@
+name: automation
+
+on:
+  schedule:
+    - cron: '0 0 * * 3'  # Every Wednesday at 00:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out this repo
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.MY_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install Google Chrome
+        run: |
+          wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+          echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+
+      - name: Install Python dependencies
+        run: |
+          pip install --upgrade pip
+          pip install pandas beautifulsoup4 selenium webdriver-manager lxml cryptography
+
+      - name: Run scraping script
+        run: python script.py
+        env:
+          PUBLIC_KEY: ${{ secrets.PUBLIC_KEY }}
+
+      - name: Commit and push scraped data
+        run: |
+          git config --local user.name "github-actions"
+          git config --local user.email "actions@users.noreply.github.com"
+          git add downloads/*.csv || echo "No new files to add"
+          git commit -m "Auto-scraped data from GitHub Actions on $(date -u)" || echo "No changes to commit"
+          git pull --rebase || echo "Nothing to rebase"
+          git push || echo "Nothing to push"
+        env:
+          GITHUB_TOKEN: ${{ secrets.MY_TOKEN }}
