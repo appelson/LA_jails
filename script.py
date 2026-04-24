@@ -29,7 +29,7 @@ def encrypt_value(val):
 # Loading URLs
 df = pd.read_csv("links.csv")
 df["roster_url"] = df["roster_url"].str.strip()
-links = df["roster_url"].tolist()[1:4]
+links = df["roster_url"].tolist()
 
 os.makedirs("downloads", exist_ok=True)
 
