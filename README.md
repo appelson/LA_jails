@@ -5,7 +5,7 @@ An automated scraper that collects inmate roster data from Louisiana parish jail
 ![Race Breakdown](race.png)
 
 ## Updates
-- April 24th, 2026: Updated to fix the encryption, to instead make it a cypher. This allows us to compare encrypted names / encrypted dates of birth across time. We also condensed the past 30+ days of downloads with the previous rosters. This gives us 7,000,000+ records.
+- **`April 24th, 2026`**: Updated to fix the encryption, to instead make it a cypher. This allows us to compare encrypted names / encrypted dates of birth across time. We also condensed the past 30+ days of downloads with the previous rosters. This gives us 7,000,000+ records.
 
 ## What it does
 
