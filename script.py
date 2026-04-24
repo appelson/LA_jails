@@ -1,4 +1,3 @@
-# Importing packages
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service as ChromeService
@@ -7,8 +6,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
-from cryptography.hazmat.primitives.asymmetric import padding
-from cryptography.hazmat.primitives import hashes, serialization
+from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
+from cryptography.hazmat.primitives import padding as sym_padding
 import pandas as pd
 import base64
 import os
@@ -16,32 +15,16 @@ import time
 from datetime import datetime
 from io import StringIO
 
-# Public key
-PUBLIC_KEY = """-----BEGIN PUBLIC KEY-----
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAonYdYlCROrQot/dxVxcN
-mDIauYe1fE9cIL3Ha/59fkYjBGfkghK+rXkIJhI2BORfcyZP0SWkQwrLSIP9lV7H
-2z5kw6XBVEipITVLZAtmK02XzVtI7DvEmtlCLB+5Q0y0UCBArOeebC9hHCzlCQzL
-KQ52qCJ5zTXG/1VmeqP+EhtrDWBl5UqSD+uqLot6koBWnYFhK02WW9VbERrnHmg5
-COBeuZiyY/JsyyIY6eg76DYqX9FHvCO8PrTH18qkEMzJvlWoNQR2ZzN46H5RoY3k
-t8+vYrQFVF8DmRLqyD8J/8yCSu3ifWMBzS0MMVViwFXT+CmgGAKduE/BrPteVhn1
-WQIDAQAB
------END PUBLIC KEY-----"""
+KEY = bytes.fromhex(os.getenv("AES_KEY"))
 
-public_key = serialization.load_pem_public_key(PUBLIC_KEY.encode())
-
-# Defining encryption function
 def encrypt_value(val):
     if not isinstance(val, str) or val.strip() == "":
         return val
-    encrypted = public_key.encrypt(
-        val.encode(),
-        padding.OAEP(
-            mgf=padding.MGF1(algorithm=hashes.SHA256()),
-            algorithm=hashes.SHA256(),
-            label=None
-        )
-    )
-    return base64.b64encode(encrypted).decode()
+    p = sym_padding.PKCS7(128).padder()
+    padded = p.update(val.strip().lower().encode()) + p.finalize()
+    cipher = Cipher(algorithms.AES(KEY), modes.ECB())
+    e = cipher.encryptor()
+    return base64.b64encode(e.update(padded) + e.finalize()).decode()
 
 # Loading URLs
 df = pd.read_csv("links.csv")
