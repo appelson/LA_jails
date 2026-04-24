@@ -1,33 +1,23 @@
-# Loading libraries
-from cryptography.hazmat.primitives.asymmetric import padding
-from cryptography.hazmat.primitives import hashes, serialization
+from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
+from cryptography.hazmat.primitives import padding as sym_padding
 import pandas as pd
 import base64
+import os
+from dotenv import load_dotenv
 
-# Loading private key (don't hack me!)
-with open("PATH", "rb") as f:
-    private_key = serialization.load_pem_private_key(f.read(), password=None)
+load_dotenv()
+KEY = bytes.fromhex(os.getenv("AES_KEY"))
 
-# Defining decryption function
 def decrypt_value(val):
-    try:
-        return private_key.decrypt(
-            base64.b64decode(val),
-            padding.OAEP(
-                mgf=padding.MGF1(algorithm=hashes.SHA256()),
-                algorithm=hashes.SHA256(),
-                label=None
-            )
-        ).decode()
-    except:
+    if not isinstance(val, str) or val.strip() == "":
         return val
+    cipher = Cipher(algorithms.AES(KEY), modes.ECB())
+    d = cipher.decryptor()
+    raw = d.update(base64.b64decode(val)) + d.finalize()
+    u = sym_padding.PKCS7(128).unpadder()
+    return (u.update(raw) + u.finalize()).decode()
 
-# Loading CSV
-df = pd.read_csv("PATH")
-
-# Decrypting columns
-sensitive_cols = ["Name", "DOB"]
-for col in sensitive_cols:
-    if col in df.columns:
-        print(f"Decrypting column: {col}")
-        df[col] = df[col].apply(decrypt_value)
+df = pd.read_csv("downloads/FILE.csv")
+df["Name"] = df["Name"].apply(decrypt_value)
+df["DOB"] = df["DOB"].apply(decrypt_value)
+print(df.head())
