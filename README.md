@@ -21,73 +21,73 @@ This code should NEVER be replicated or repurposed to scrape and track individua
 
 ## Parish Breakdown
 
-_Last updated: 2026-06-22 03:45 UTC_
+_Last updated: 2026-06-23 02:51 UTC_
 
-**Total inmates (latest scrape):** 26,798 across 72 parishes/jails
+**Total inmates (latest scrape):** 26,754 across 72 parishes/jails
 
 ### Acadia Parish
 **Total:** 184
 
 | Race | Count | % |
 |------|-------|---|
-| White | 99 | 53.8% |
-| Black | 83 | 45.1% |
+| White | 98 | 53.3% |
+| Black | 84 | 45.7% |
 | Asian/PacificIslander | 1 | 0.5% |
 | American Indian/Alaska Native | 1 | 0.5% |
 
 ### Allen Parish
-**Total:** 113
+**Total:** 114
 
 | Race | Count | % |
 |------|-------|---|
-| White | 72 | 63.7% |
-| Black | 38 | 33.6% |
+| White | 72 | 63.2% |
+| Black | 39 | 34.2% |
 | Unknown | 2 | 1.8% |
 | American Indian/Alaska Native | 1 | 0.9% |
 
 ### Ascension Parish
-**Total:** 532
+**Total:** 529
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 284 | 53.4% |
-| White | 211 | 39.7% |
+| Black | 282 | 53.3% |
+| White | 210 | 39.7% |
 | Unknown | 33 | 6.2% |
 | Asian/PacificIslander | 4 | 0.8% |
 
 ### Assumption Parish
+**Total:** 152
+
+| Race | Count | % |
+|------|-------|---|
+| Unknown | 83 | 54.6% |
+| White | 69 | 45.4% |
+
+### Avoyelles Parish
+**Total:** 351
+
+| Race | Count | % |
+|------|-------|---|
+| Black | 193 | 55.0% |
+| White | 154 | 43.9% |
+| Unknown | 3 | 0.9% |
+| Asian/PacificIslander | 1 | 0.3% |
+
+### Beauregard Parish
 **Total:** 155
 
 | Race | Count | % |
 |------|-------|---|
-| Unknown | 86 | 55.5% |
-| White | 69 | 44.5% |
-
-### Avoyelles Parish
-**Total:** 355
-
-| Race | Count | % |
-|------|-------|---|
-| Black | 196 | 55.2% |
-| White | 155 | 43.7% |
-| Unknown | 3 | 0.8% |
-| Asian/PacificIslander | 1 | 0.3% |
-
-### Beauregard Parish
-**Total:** 156
-
-| Race | Count | % |
-|------|-------|---|
-| White | 107 | 68.6% |
-| Black | 49 | 31.4% |
+| White | 106 | 68.4% |
+| Black | 49 | 31.6% |
 
 ### Bienville Parish
-**Total:** 38
+**Total:** 39
 
 | Race | Count | % |
 |------|-------|---|
-| White | 24 | 63.2% |
-| Unknown | 14 | 36.8% |
+| White | 24 | 61.5% |
+| Unknown | 15 | 38.5% |
 
 ### Bogalusa Police Department
 **Total:** 23
@@ -98,31 +98,31 @@ _Last updated: 2026-06-22 03:45 UTC_
 | White | 10 | 43.5% |
 
 ### Bossier City Police Department
-**Total:** 52
+**Total:** 39
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 39 | 75.0% |
-| White | 12 | 23.1% |
-| Asian/PacificIslander | 1 | 1.9% |
+| Black | 28 | 71.8% |
+| White | 10 | 25.6% |
+| Asian/PacificIslander | 1 | 2.6% |
 
 ### Bossier Parish
-**Total:** 1,098
+**Total:** 1,099
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 596 | 54.3% |
-| White | 501 | 45.6% |
+| Black | 600 | 54.6% |
+| White | 498 | 45.3% |
 | American Indian/Alaska Native | 1 | 0.1% |
 
 ### Caddo Parish
-**Total:** 1,685
+**Total:** 1,677
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 1,269 | 75.3% |
-| White | 388 | 23.0% |
-| Unknown | 26 | 1.5% |
+| Black | 1,264 | 75.4% |
+| White | 385 | 23.0% |
+| Unknown | 26 | 1.6% |
 | Asian/PacificIslander | 2 | 0.1% |
 
 ### Calcasieu Parish
@@ -130,18 +130,18 @@ _Last updated: 2026-06-22 03:45 UTC_
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 620 | 56.3% |
-| White | 441 | 40.0% |
+| Black | 617 | 56.0% |
+| White | 444 | 40.3% |
 | Unknown | 38 | 3.4% |
 | Asian/PacificIslander | 3 | 0.3% |
 
 ### Caldwell Parish
-**Total:** 626
+**Total:** 628
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 396 | 63.3% |
-| White | 209 | 33.4% |
+| Black | 398 | 63.4% |
+| White | 209 | 33.3% |
 | American Indian/Alaska Native | 20 | 3.2% |
 | Unknown | 1 | 0.2% |
 
@@ -150,8 +150,8 @@ _Last updated: 2026-06-22 03:45 UTC_
 
 | Race | Count | % |
 |------|-------|---|
-| White | 20 | 87.0% |
-| Black | 3 | 13.0% |
+| White | 19 | 82.6% |
+| Black | 4 | 17.4% |
 
 ### Catahoula Parish
 **Total:** 133
@@ -159,98 +159,98 @@ _Last updated: 2026-06-22 03:45 UTC_
 | Race | Count | % |
 |------|-------|---|
 | Black | 93 | 69.9% |
-| White | 38 | 28.6% |
-| Unknown | 2 | 1.5% |
+| White | 39 | 29.3% |
+| Unknown | 1 | 0.8% |
 
 ### Claiborne Parish
-**Total:** 662
+**Total:** 668
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 409 | 61.8% |
-| White | 253 | 38.2% |
+| Black | 414 | 62.0% |
+| White | 254 | 38.0% |
 
 ### Concordia Parish
-**Total:** 817
+**Total:** 825
 
 | Race | Count | % |
 |------|-------|---|
-| White | 464 | 56.8% |
-| Black | 351 | 43.0% |
+| White | 468 | 56.7% |
+| Black | 355 | 43.0% |
 | Unknown | 2 | 0.2% |
 
 ### DeSoto Parish
-**Total:** 127
+**Total:** 124
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 73 | 57.5% |
-| White | 53 | 41.7% |
+| Black | 71 | 57.3% |
+| White | 52 | 41.9% |
 | Asian/PacificIslander | 1 | 0.8% |
 
 ### East Baton Rouge Parish
-**Total:** 1,339
+**Total:** 1,346
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 1,061 | 79.2% |
-| White | 211 | 15.8% |
+| Black | 1,070 | 79.5% |
+| White | 210 | 15.6% |
 | Unknown | 64 | 4.8% |
-| Asian/PacificIslander | 3 | 0.2% |
+| Asian/PacificIslander | 2 | 0.1% |
 
 ### East Feliciana Parish
-**Total:** 266
+**Total:** 265
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 170 | 63.9% |
-| White | 95 | 35.7% |
+| Black | 169 | 63.8% |
+| White | 95 | 35.8% |
 | Asian/PacificIslander | 1 | 0.4% |
 
 ### Evangeline Parish
-**Total:** 149
+**Total:** 150
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 84 | 56.4% |
-| White | 64 | 43.0% |
+| Black | 83 | 55.3% |
+| White | 66 | 44.0% |
 | Unknown | 1 | 0.7% |
 
 ### Franklin Parish
-**Total:** 840
+**Total:** 843
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 547 | 65.1% |
-| White | 282 | 33.6% |
+| Black | 549 | 65.1% |
+| White | 283 | 33.6% |
 | Unknown | 11 | 1.3% |
 
 ### Hammond Police Department
-**Total:** 10
+**Total:** 9
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 7 | 70.0% |
-| White | 3 | 30.0% |
+| Black | 6 | 66.7% |
+| White | 3 | 33.3% |
 
 ### Iberia Parish
-**Total:** 459
+**Total:** 453
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 266 | 58.0% |
-| White | 182 | 39.7% |
-| Unknown | 5 | 1.1% |
+| Black | 263 | 58.1% |
+| White | 180 | 39.7% |
 | Asian/PacificIslander | 5 | 1.1% |
+| Unknown | 4 | 0.9% |
 | American Indian/Alaska Native | 1 | 0.2% |
 
 ### Iberville Parish
-**Total:** 93
+**Total:** 92
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 63 | 67.7% |
-| White | 29 | 31.2% |
+| Black | 61 | 66.3% |
+| White | 30 | 32.6% |
 | Unknown | 1 | 1.1% |
 
 ### Jackson Parish
@@ -261,22 +261,22 @@ _Last updated: 2026-06-22 03:45 UTC_
 | Unknown | 1 | 100.0% |
 
 ### Jefferson Davis Parish
-**Total:** 165
+**Total:** 163
 
 | Race | Count | % |
 |------|-------|---|
-| White | 87 | 52.7% |
-| Black | 74 | 44.8% |
+| White | 87 | 53.4% |
+| Black | 72 | 44.2% |
 | American Indian/Alaska Native | 3 | 1.8% |
 | Unknown | 1 | 0.6% |
 
 ### Jefferson Parish
-**Total:** 1,141
+**Total:** 1,131
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 748 | 65.6% |
-| White | 387 | 33.9% |
+| Black | 734 | 64.9% |
+| White | 391 | 34.6% |
 | Unknown | 6 | 0.5% |
 
 ### Kinder Police Department
@@ -287,30 +287,30 @@ _Last updated: 2026-06-22 03:45 UTC_
 | White | 1 | 100.0% |
 
 ### LaSalle Parish
-**Total:** 72
+**Total:** 74
 
 | Race | Count | % |
 |------|-------|---|
-| White | 48 | 66.7% |
-| Black | 23 | 31.9% |
+| White | 50 | 67.6% |
+| Black | 23 | 31.1% |
 | Unknown | 1 | 1.4% |
 
 ### Lafayette Parish
-**Total:** 851
+**Total:** 861
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 556 | 65.3% |
-| White | 282 | 33.1% |
+| Black | 559 | 64.9% |
+| White | 289 | 33.6% |
 | Unknown | 13 | 1.5% |
 
 ### Lafourche Parish
-**Total:** 752
+**Total:** 745
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 386 | 51.3% |
-| White | 361 | 48.0% |
+| Black | 384 | 51.5% |
+| White | 356 | 47.8% |
 | American Indian/Alaska Native | 4 | 0.5% |
 | Asian/PacificIslander | 1 | 0.1% |
 
@@ -323,41 +323,41 @@ _Last updated: 2026-06-22 03:45 UTC_
 | Black | 1 | 33.3% |
 
 ### Lincoln Parish
-**Total:** 369
+**Total:** 367
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 280 | 75.9% |
-| White | 86 | 23.3% |
+| Black | 276 | 75.2% |
+| White | 88 | 24.0% |
 | Unknown | 3 | 0.8% |
 
 ### Livingston Parish
-**Total:** 816
+**Total:** 814
 
 | Race | Count | % |
 |------|-------|---|
-| White | 584 | 71.6% |
-| Black | 221 | 27.1% |
+| White | 580 | 71.3% |
+| Black | 223 | 27.4% |
 | Unknown | 9 | 1.1% |
 | Asian/PacificIslander | 1 | 0.1% |
 | American Indian/Alaska Native | 1 | 0.1% |
 
 ### Madison Parish
-**Total:** 144
+**Total:** 143
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 115 | 79.9% |
-| White | 28 | 19.4% |
+| Black | 114 | 79.7% |
+| White | 28 | 19.6% |
 | Unknown | 1 | 0.7% |
 
 ### Morehouse Parish
-**Total:** 217
+**Total:** 215
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 153 | 70.5% |
-| White | 64 | 29.5% |
+| Black | 152 | 70.7% |
+| White | 63 | 29.3% |
 
 ### Natchitoches Parish
 **Total:** 198
@@ -369,11 +369,11 @@ _Last updated: 2026-06-22 03:45 UTC_
 | Unknown | 5 | 2.5% |
 
 ### Oakdale Police Department
-**Total:** 2
+**Total:** 3
 
 | Race | Count | % |
 |------|-------|---|
-| White | 2 | 100.0% |
+| White | 3 | 100.0% |
 
 ### Opelousas Police Department
 **Total:** 1
@@ -393,108 +393,107 @@ _Last updated: 2026-06-22 03:45 UTC_
 | Asian/PacificIslander | 3 | 0.2% |
 
 ### Ouachita Parish
-**Total:** 1,351
+**Total:** 1,361
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 899 | 66.5% |
-| White | 436 | 32.3% |
+| Black | 903 | 66.3% |
+| White | 442 | 32.5% |
 | Unknown | 16 | 1.2% |
 
 ### Plaquemines Parish
-**Total:** 668
+**Total:** 680
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 441 | 66.0% |
-| White | 205 | 30.7% |
+| Black | 450 | 66.2% |
+| White | 208 | 30.6% |
 | Unknown | 12 | 1.8% |
 | Asian/PacificIslander | 6 | 0.9% |
 | American Indian/Alaska Native | 4 | 0.6% |
 
 ### Pointe Coupee Parish
-**Total:** 106
+**Total:** 107
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 66 | 62.3% |
-| White | 37 | 34.9% |
+| Black | 66 | 61.7% |
+| White | 38 | 35.5% |
 | Unknown | 2 | 1.9% |
 | American Indian/Alaska Native | 1 | 0.9% |
 
 ### Rapides Parish
-**Total:** 1,051
+**Total:** 1,040
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 663 | 63.1% |
-| White | 370 | 35.2% |
+| Black | 665 | 63.9% |
+| White | 357 | 34.3% |
 | Unknown | 16 | 1.5% |
 | Asian/PacificIslander | 2 | 0.2% |
 
 ### Red River Parish
-**Total:** 43
+**Total:** 44
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 24 | 55.8% |
-| White | 18 | 41.9% |
+| Black | 24 | 54.5% |
+| White | 19 | 43.2% |
 | Asian/PacificIslander | 1 | 2.3% |
 
 ### Richland Parish
-**Total:** 731
+**Total:** 723
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 505 | 69.1% |
-| White | 215 | 29.4% |
+| Black | 497 | 68.7% |
+| White | 215 | 29.7% |
 | Unknown | 7 | 1.0% |
-| Asian/PacificIslander | 4 | 0.5% |
+| Asian/PacificIslander | 4 | 0.6% |
 
 ### Sabine Parish
-**Total:** 192
+**Total:** 191
 
 | Race | Count | % |
 |------|-------|---|
-| White | 105 | 54.7% |
-| Black | 84 | 43.8% |
+| White | 103 | 53.9% |
+| Black | 85 | 44.5% |
 | Unknown | 2 | 1.0% |
 | American Indian/Alaska Native | 1 | 0.5% |
 
 ### Shreveport Police Department
-**Total:** 78
+**Total:** 67
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 60 | 76.9% |
-| White | 17 | 21.8% |
-| Unknown | 1 | 1.3% |
+| Black | 52 | 77.6% |
+| White | 15 | 22.4% |
 
 ### St. Bernard Parish
-**Total:** 228
+**Total:** 225
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 136 | 59.6% |
-| White | 89 | 39.0% |
+| Black | 133 | 59.1% |
+| White | 89 | 39.6% |
 | Asian/PacificIslander | 2 | 0.9% |
 | Unknown | 1 | 0.4% |
 
 ### St. Charles Parish
-**Total:** 184
+**Total:** 191
 
 | Race | Count | % |
 |------|-------|---|
-| Unknown | 111 | 60.3% |
-| White | 73 | 39.7% |
+| Unknown | 111 | 58.1% |
+| White | 80 | 41.9% |
 
 ### St. Helena Parish
-**Total:** 49
+**Total:** 51
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 34 | 69.4% |
-| White | 14 | 28.6% |
+| Black | 35 | 68.6% |
+| White | 15 | 29.4% |
 | Unknown | 1 | 2.0% |
 
 ### St. James Parish
@@ -502,53 +501,53 @@ _Last updated: 2026-06-22 03:45 UTC_
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 55 | 82.1% |
-| White | 12 | 17.9% |
+| Black | 56 | 83.6% |
+| White | 11 | 16.4% |
 
 ### St. John the Baptist Parish
-**Total:** 202
+**Total:** 203
 
 | Race | Count | % |
 |------|-------|---|
-| Unknown | 131 | 64.9% |
-| White | 71 | 35.1% |
+| Unknown | 130 | 64.0% |
+| White | 73 | 36.0% |
 
 ### St. Landry Parish
-**Total:** 115
+**Total:** 116
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 73 | 63.5% |
-| White | 40 | 34.8% |
+| Black | 73 | 62.9% |
+| White | 41 | 35.3% |
 | Unknown | 2 | 1.7% |
 
 ### St. Martin Parish
-**Total:** 213
+**Total:** 210
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 107 | 50.2% |
-| White | 96 | 45.1% |
-| Unknown | 9 | 4.2% |
+| Black | 107 | 51.0% |
+| White | 93 | 44.3% |
+| Unknown | 9 | 4.3% |
 | American Indian/Alaska Native | 1 | 0.5% |
 
 ### St. Mary Parish
-**Total:** 279
+**Total:** 280
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 147 | 52.7% |
-| White | 131 | 47.0% |
+| Black | 145 | 51.8% |
+| White | 134 | 47.9% |
 | Asian/PacificIslander | 1 | 0.4% |
 
 ### St. Tammany Parish
-**Total:** 885
+**Total:** 872
 
 | Race | Count | % |
 |------|-------|---|
-| White | 463 | 52.3% |
-| Black | 379 | 42.8% |
-| Unknown | 40 | 4.5% |
+| White | 456 | 52.3% |
+| Black | 375 | 43.0% |
+| Unknown | 38 | 4.4% |
 | Asian/PacificIslander | 2 | 0.2% |
 | American Indian/Alaska Native | 1 | 0.1% |
 
@@ -561,21 +560,21 @@ _Last updated: 2026-06-22 03:45 UTC_
 | Black | 2 | 11.1% |
 
 ### Tangipahoa Parish
-**Total:** 668
+**Total:** 661
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 417 | 62.4% |
-| White | 249 | 37.3% |
-| Unknown | 2 | 0.3% |
+| Black | 412 | 62.3% |
+| White | 248 | 37.5% |
+| Unknown | 1 | 0.2% |
 
 ### Tensas Parish
-**Total:** 558
+**Total:** 561
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 372 | 66.7% |
-| White | 176 | 31.5% |
+| Black | 376 | 67.0% |
+| White | 175 | 31.2% |
 | Unknown | 10 | 1.8% |
 
 ### Terrebonne Parish
@@ -589,22 +588,22 @@ _Last updated: 2026-06-22 03:45 UTC_
 | Unknown | 1 | 0.2% |
 
 ### Vermillion Parish
-**Total:** 137
+**Total:** 136
 
 | Race | Count | % |
 |------|-------|---|
-| White | 68 | 49.6% |
-| Black | 65 | 47.4% |
+| White | 67 | 49.3% |
+| Black | 65 | 47.8% |
 | Unknown | 3 | 2.2% |
 | Asian/PacificIslander | 1 | 0.7% |
 
 ### Vernon Parish
-**Total:** 164
+**Total:** 163
 
 | Race | Count | % |
 |------|-------|---|
-| White | 112 | 68.3% |
-| Black | 49 | 29.9% |
+| White | 111 | 68.1% |
+| Black | 49 | 30.1% |
 | Unknown | 2 | 1.2% |
 | Asian/PacificIslander | 1 | 0.6% |
 
@@ -622,52 +621,52 @@ _Last updated: 2026-06-22 03:45 UTC_
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 97 | 50.8% |
-| White | 94 | 49.2% |
+| Black | 96 | 50.3% |
+| White | 95 | 49.7% |
 
 ### Webster Parish
-**Total:** 444
+**Total:** 446
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 237 | 53.4% |
-| White | 201 | 45.3% |
+| Black | 238 | 53.4% |
+| White | 202 | 45.3% |
 | Unknown | 4 | 0.9% |
-| Asian/PacificIslander | 2 | 0.5% |
+| Asian/PacificIslander | 2 | 0.4% |
 
 ### West Baton Rouge Parish
-**Total:** 123
+**Total:** 127
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 86 | 69.9% |
-| White | 33 | 26.8% |
+| Black | 89 | 70.1% |
+| White | 34 | 26.8% |
 | Unknown | 3 | 2.4% |
 | Asian/PacificIslander | 1 | 0.8% |
 
 ### West Carroll Parish
-**Total:** 31
+**Total:** 30
 
 | Race | Count | % |
 |------|-------|---|
-| White | 24 | 77.4% |
-| Black | 7 | 22.6% |
+| White | 24 | 80.0% |
+| Black | 6 | 20.0% |
 
 ### West Felician Parish
-**Total:** 192
+**Total:** 189
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 127 | 66.1% |
-| White | 65 | 33.9% |
+| Black | 124 | 65.6% |
+| White | 65 | 34.4% |
 
 ### Winn Parish
-**Total:** 141
+**Total:** 142
 
 | Race | Count | % |
 |------|-------|---|
-| Black | 73 | 51.8% |
-| White | 68 | 48.2% |
+| Black | 73 | 51.4% |
+| White | 69 | 48.6% |
 
 ### Winnfield Police Department
 **Total:** 2
